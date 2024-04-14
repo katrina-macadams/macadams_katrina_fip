@@ -30,7 +30,11 @@
         <h2 class="hidden">Main Navigation</h2>
         <input type="checkbox" id="hamburger">
         <label for="hamburger">
-        <img id="hamburger" src="images/burger.svg" alt="hamburger menu icon">
+            <svg id="hamburger" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 400 400">
+                <line id="top_line" data-name="top line" class="cls-1" x1="96.5" y1="121.8" x2="303.5" y2="121.4" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="23px"/>
+                <line id="mid_line" data-name="mid line" class="cls-1" x1="96.5" y1="200.2" x2="303.5" y2="199.8" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="23px"/>
+                <line id="bot_line" data-name="bot line" class="cls-1" x1="96.5" y1="278.6" x2="303.5" y2="278.2" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="23px"/>
+              </svg>
         </label>
         <div id="burger-con">
             <ul>
@@ -41,7 +45,7 @@
             </ul>
         </div>
     </nav>
-<div id="logo_cont" class="grid-con col-start-2 col-span-2">
+<div id="logo_cont" class="grid-con col-start-2 col-span-2 m-col-start-6 ">
     <div id="logo" class="col-span-full">
         <img src="images/logo.svg" alt="orbitz_logo">
     </div>
@@ -54,12 +58,12 @@
 
         <!-- Circle Bottle Image -->
     <div class="grid-con">
-        <div class="col-start-2 col-span-2">
+        <div class="col-start-2 col-span-2 m-col-start-2 m-col-span-3">
             <div class="carousel_cont">
 
             <div class="img_cont">
-                <img class="carousel_img" src="images/flavours.jpg" alt="Product Image">
-                <img class="carousel_img" src="images/poster_m.jpg" alt="Product Image">
+                <img class="carousel_img" src="images/gallery_o.jpg" alt="Product Image">
+                <img class="carousel_img" src="images/gallery_p.jpg" alt="Product Image">
             </div>
             <button class="arrow left_arrow">
                   <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1488.48 707.98" style="width: 20px; height: 20px;">
@@ -72,61 +76,75 @@
                   </svg>
                   
             </button>
-            </div>
         </div>
     </div>
-        
-    <div class="col-span-full">
-
-        <div id="desc">
-            <!-- Title -->
-            <h1 class="h2m">ORANGE DRINK</h1>
-            <!-- Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore. 
-                et.dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-        </div>
+    <div class="grid-con col-span-full m-col-start-7 m-col-span-6">
+    <div  class="desc m-col-span-full">
+        <!-- Title -->
+        <h1 class="h2m">Orbitz Flavours</h1>
+        <!-- Paragraph -->
+        <p id="orange_cap">Experience the intense burst of sunshine with Solar Flare Orange. This invigorating blend combines the zesty tang of ripe oranges with a refreshing twist, creating a flavor that’s out of this world.</p>
+        <p id="purple_cap">Or embark on a cosmic journey with Galactic Grape! Bursting with the sweet essence of ripe grapes, this flavor transports your taste buds to distant galaxies. </p>
+       
+    </div>
+    <h2 class="flavours h2m col-span-full">Flavours</h2>
+    <div class="flavours grid-con m-col-span-4 l-col-span-6">
+        <img class="fruit m-col-span-2 l-col-span-6" src="images/orange.png">
+        <img class="fruit m-col-span-2 l-col-span-6" src="images/grape.png">
+        <img class="soon fruit m-col-span-2 l-col-span-6" src="images/raspberry.png">
+        <img class="soon fruit m-col-span-2 l-col-span-6" src="images/strawberry.png">
+    </div>
+    <div class="grid-con">
         <!-- Nutrional Facts -->
-        <h2 class="h2m">Nutrional Facts</h2>
-        <div id="round_cont" class="grid-con">
+        <h2 class="h2m m-col-span-6">Nutrional Facts</h2>
+        <div id="round_cont" class="grid-con col-span-full m-col-span-full">
             <!-- Item -->
-            <div id="items" class="col-span-3">
-                <p>Carbs</p>
+            <div id="items" class="col-span-3 m-col-span-9">
+                <p>Calories</p>
+                <p>Fat</p>
+                <p>Sodium</p>
                 <p>Sugar</p>
-                <p>Fiber</p>
-                <p>Iron</p>
             </div>
 
             <!-- Percetage/Number -->
-            <div id="numbers" class="col-span-1">
-                <p>Num</p>
-                <p>Num</p>
-                <p>Num</p>
-                <p>Num</p>
+            <div id="numbers" class="col-span-1 m-col-span-3">
+                <p>120</p>
+                <p>0.5 g</p>
+                <p>5 mg</p>
+                <p>30 g</p>
+            </div>
             </div>
         </div>
     </div>
+</div>
 </section>
 
     <!-- BREAK  -->
-    <div class="break full-width-grid-con"> <p class="col-span-full">random text that im gonna put in here</p> </div>
+    <div class="break full-width-grid-con"> <p class="col-span-full">Dive deeper into the universe of flavors with Orbitz – where every sip is a discovery.</p> </div>
 
    <!-- THE DRINK -->
 
-        <!-- Orbi -->
-        <section id="section_3" class="grid-con">
+        <!-- Bottle -->
+        <section class="grid-con">
             <h2 class="hidden">Our Story</h2>
       
             <!-- Section Image -->
-            <img id="bottle" class="col-span-full" src="images/poster_m.jpg" alt="null"> 
+            <picture class="col-span-full m-col-start-4 m-col-span-8 l-col-span-6">
+                <source srcset="images/visibility_desktop.jpg" media="(min-width: 768px)">
+                <source srcset="images/visibility_mobile.jpg" media="(max-width: 767px)">
+                <img id="bottle" class="col-span-full" src="images/visibility_desktop.jpg" alt="frosted glass orange drink bottle"> 
+            </picture>
       
             <!-- Section Paragraph -->
-            <div class="bottle_tex col-span-full">
-            <h3 class="h3d">Title</h3>
+            <div class="bottle_tex col-span-full l-col-start-7 l-col-span-6">
+            <h3 class="h3d">The Art of Visibility</h3>
             <p class="body2d">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Our bespoke frosted glass bottles are a canvas for creativity and clarity, 
+                intricately designed to reveal the vibrant spectacle within. 
+                Strategic clear glass cutouts showcase the colorful swirl of liquid and orbs, 
+                inviting a visual dance that complements the drink’s unique character. 
+                Every bottle of Orbitz not only refreshes but also captivates the eye, 
+                making each sip an engaging experience.
             </p>
             </div>
       
@@ -134,41 +152,47 @@
 
 
         <!-- Orbs -->
-        <section id="section_3" class="grid-con">
-            <h2 class="hidden">Our Story</h2>
+        <section class="grid-con">
+            <h2 class="hidden">Redefined</h2>
       
             <!-- Section Image -->
-            <img id="bottle" class="col-span-full" src="images/poster_m.jpg" alt="null"> 
+            <picture class="col-span-full m-col-start-4 m-col-span-8 l-col-span-6">
+                <source srcset="images/redefined_desktop.jpg" media="(min-width: 768px)">
+                <source srcset="images/redefined_mobile.jpg" media="(max-width: 767px)">
+                <img class="col-span-full" src="images/redefined_desktop.jpg" alt="floating orbs in shape of a person"> 
+            </picture>
       
             <!-- Section Paragraph -->
-            <div class="bottle_tex col-span-full">
-            <h3 class="h3d">Title</h3>
+            <div class="bottle_tex col-span-full l-col-start-7 l-col-span-6">
+            <h3 class="h3d">Levitating Flavours Redefined</h3>
             <p class="body2d">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                The floating orbs are not just a feast for the eyes but a revolution in flavour and texture. 
+                By leveraging culinary physics, and addressing past concerns we enhanced both their flavour 
+                profile and mouthfeel. Each orb slowly floats through the beverage, an invitation to explore 
+                a futuristic drinking experience.
             </p>
             </div>
       
         </section>
 
 
-        <!-- Bottle/Label -->
-        <section id="section_3" class="grid-con">
-            <h2 class="hidden">Our Story</h2>
-      
+        <!-- Orbi -->
+        <section class="grid-con">
+            <h2 class="hidden">Orbi</h2>
             <!-- Section Image -->
-            <img id="bottle" class="col-span-full" src="images/poster_m.jpg" alt="null"> 
-      
+            <picture class="col-span-full m-col-start-4 m-col-span-8 l-col-span-6">
+                <source srcset="images/orbi_desktop.jpg" media="(min-width: 768px)">
+                <source srcset="images/orbi_mobile.jpg" media="(max-width: 767px)">
+                <img class="col-span-full" src="images/orbi_desktop.jpg" alt="floating orbs in shape of a person"> 
+            </picture>
             <!-- Section Paragraph -->
-            <div class="bottle_tex col-span-full">
-            <h3 class="h3d">Title</h3>
+            <div class="bottle_tex col-span-full l-col-start-7 l-col-span-6">
+            <h3 class="h3d">Meet Orbi</h3>
             <p class="body2d">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Orbi isn’t just our logo; it’s the heart and soul of Orbitz. 
+                Depicted as a vibrant planet with a miniature spaceship in perpetual orbit, 
+                Orbi represents the adventurous spirit of Orbitz. Orbi journies around the cosmos of taste, 
+                embodying a curious, bold, and joyful personality. 
             </p>
             </div>
       
@@ -178,12 +202,12 @@
 </main>
 
 <!-- FOOTER -->
-<footer>
+<footer class="footer_black">
     <!--FOOTER BREAK-->    
-    <div class="break full-width-grid-con"> <p class="col-span-full">random text that im gonna put in here</p> </div>
+    <div class="break full-width-grid-con"></div>
     
         <!-- FOOTER LINKS -->
-    <div class="grid-con">
+    <div id="foot_mobile" class="grid-con">
         <div id="logo_cont" class="grid-con col-start-2 col-span-2">
             <div id="footer_logo" class="col-span-full">
                 <img src="images/logo_wordmark.png" alt="orbitz_logo">
@@ -192,29 +216,31 @@
     </div>
             <!-- Footer Navigation -->
             <nav class="col-span-full grid-con">
-                <a class= "foot_nav col-span-1" href="index.html">Home</a>
-                <a class= "foot_nav col-start-2 col-span-1" href="product.html">Product</a>
-                <a class= "foot_nav col-start-3 col-span-1" href="about.html">About Us</a>
-                <a class= "foot_nav col-start-4 col-span-1" href="contact.html">Contact</a>
+                <a class= "foot_nav col-span-1 m-col-start-2" href="index.html">Home</a>
+                <a class= "foot_nav col-start-2 col-span-1 m-col-start-4" href="product.html">Product</a>
+    
+                <img id="footer_logo_desk" class="m-col-start-6 m-col-span-2" src="images/logo_wordmark.png" alt="orbitz_logo">
+    
+                <a class= "foot_nav col-start-3 col-span-1 m-col-start-9" href="about.html">About Us</a>
+                <a class= "foot_nav col-start-4 col-span-1 m-col-start-11" href="contact.html">Contact</a>
             </nav>
     
             <!-- Social Media -->
             <div class="col-span-full grid-con">
-                <a class= "foot_nav col-span-1" href="null">Facebook</a>
-                <a class= "foot_nav col-start-2 col-span-1" href="null">Instagram</a>
-                <a class= "foot_nav col-start-3 col-span-1" href="null">X</a>
-                <a class= "foot_nav col-start-4 col-span-1" href="null">TikTok</a>
+                <img src="images/fb.png" class= "foot_med col-span-1 m-col-start-2 m-col-span-2" href="#">
+                <img src="images/ig.png" class= "foot_med col-start-2 col-span-1 m-col-start-4 m-col-span-2" href="#">
+                <img src="images/x.png" class= "foot_med col-start-3 col-span-1 m-col-start-9 m-col-span-2" href="#">
+                <img src="images/tt.png" class= "foot_med col-start-4 col-span-1 m-col-start-11 m-col-span-2" href="#">
             </div>
         </section>
     
         <!-- Legal Jargon -->
         <section class="legal grid-con">
             <h2 class="hidden"> Legal Jargon</h2>
-            <p class="col-start-4">Legal Jargon </p>
+            <p class="col-span-full">© 2024 Orbitz All Rights Reserved • Privacy Policy • Terms of Service </p>
         </section>
     
     </footer>
-
 </body>
 <!-- END OF PRODUCT PAGE -->
 

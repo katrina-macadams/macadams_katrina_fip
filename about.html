@@ -10,14 +10,20 @@
 <!-- CSS LINKS -->
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
+
+
+<!-- FONTS -->
+<link rel="stylesheet" href="https://use.typekit.net/qor8jmp.css">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/chicagoflf" type="text/css"/>
+
 </head>
 
 <!-- ORBITZ ABOUT US PAGE -->
-<body>
+<body class="background">
     <main>
 
     <!-- HEADER -->
-    <section id="hero">
+    <section id="astro">
       <header id="main_header" class="grid-con">
         <h2 class="hidden">Hero</h2>
 
@@ -25,7 +31,11 @@
         <h2 class="hidden">Main Navigation</h2>
         <input type="checkbox" id="hamburger">
         <label for="hamburger">
-        <img id="hamburger" src="images/burger.svg" alt="hamburger menu icon">
+            <svg class="hamburger" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 400 400">
+                <line id="top_line" data-name="top line" class="cls-1" x1="96.5" y1="121.8" x2="303.5" y2="121.4" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="23px"/>
+                <line id="mid_line" data-name="mid line" class="cls-1" x1="96.5" y1="200.2" x2="303.5" y2="199.8" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="23px"/>
+                <line id="bot_line" data-name="bot line" class="cls-1" x1="96.5" y1="278.6" x2="303.5" y2="278.2" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="23px"/>
+              </svg>
         </label>
         <div id="burger-con">
             <ul>
@@ -36,7 +46,7 @@
             </ul>
         </div>
     </nav>
-<div id="logo_cont" class="grid-con col-start-2 col-span-2">
+<div id="logo_cont" class="grid-con col-start-2 col-span-2 m-col-start-6 ">
     <div id="logo" class="col-span-full">
         <img src="images/logo.svg" alt="orbitz_logo">
     </div>
@@ -46,107 +56,127 @@
       </section>
       
       <!-- BREAK  -->
-      <div class="break full-width-grid-con"> <p class="col-span-full">random text that im gonna put in here</p> </div>
+      <div class="break full-width-grid-con"> <p class="col-span-full">Creating Moments of Joy, One Sip At A Time.</p> </div>
 
     <!-- WHAT MAKES US DIFFERENT -->
-    <section class="grid-con">
-        <h1 class="hidden">Title Text Placeholder</h1>
-        <h2 class="h2m col-span-full">lorem ipsum garbage i dont wanna go copy paste it again but this is probably better anyway</h2>
-          <div class="grid-con col-start-1 col-span-3">
+    <section class="different grid-con">
+        <h1 class="about_sec col-start-2 col-span-2 m-col-start-5 m-col-span-4">Why Orbitz Stands Out</h1>
+        <h2 class="about_sec col-span-full">Orbitz isn’t just a drink; it’s a party in a bottle! Discover the distinctive blend of flavour, excitement, and joy that makes it a cosmic delight!</h2>
+          <div class="about_space col-span-full">
+            <div class="about_cont col-start-1 col-span-1">
+                <!-- Image -->
+                <img src="images/futuristic.png" alt="rocketship"> 
+                <!-- Title -->
+                <h2 class="about_sec">Futuristic Bottling</h2>
+                <!-- Paragraph -->
+                <p>Our frosted glass bottles with clear glass designs not only showcase the vibrant orbs inside but also enhance the drinking experience by merging form with function.</p>
+            </div>
+
             <div class="about_cont col-start-2 col-span-1">
                 <!-- Image -->
-                <img src="images/null.jpg" alt="null"> 
+                <img src="images/taste.png" alt="cute orange"> 
                 <!-- Title -->
-                <h2>Title</h2>
+                <h2 class="about_sec" >Orb-tastic Taste</h2>
                 <!-- Paragraph -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p>The orbs in our drinks are more than just a visual treat; they’re a burst of flavour with improved taste and intriguing textures, each sip is an adventure.</p>
             </div>
 
             <div class="about_cont col-start-3 col-span-1">
                 <!-- Image -->
-                <img src="images/null.jpg" alt="null"> 
+                <img src="images/telescope.png" alt="telescope icon"> 
                 <!-- Title -->
-                <h2>Title</h2>
+                <h2 class="about_sec" >More Than A Drink</h2>
                 <!-- Paragraph -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            </div>
-
-            <div class="about_cont col-start-4 col-span-1">
-                <!-- Image -->
-                <img src="images/null.jpg" alt="null"> 
-                <!-- Title -->
-                <h2>Title</h2>
-                <!-- Paragraph -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p>Orbitz is about celebrating life with every gulp. Inspiring everyone to gets a taste to chase after their dreams and break barriers in their community. </p>
             </div>
           </div>
     </section>
       
       <!-- BREAK  -->
-      <div class="break full-width-grid-con"> <p class="col-span-full">random text that im gonna put in here</p> </div>
+      <div class="break full-width-grid-con"> <p class="col-span-full"></p> </div>
     
     <!-- OUR STORY -->
      <section id="section_3" class="grid-con">
       <h2 class="hidden">Our Story</h2>
 
       <!-- Section Image -->
-      <img id="bottle" class="col-span-full" src="images/poster_m.jpg" alt="null"> 
-
-      <!-- Section Paragraph -->
-      <div class="bottle_tex col-span-full">
-      <h3 class="h3d">Title</h3>
-      <p class="body2d">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      </div>
+      <img id="astro_story" class="col-start-2 col-span-2 m-col-start-4 m-col-span-6" src="images/astro.png" alt="null"> 
 
   </section>
+
+
+    <div id="journey" class="col-span-full">
+      <h2 class="journey_tex">Our Journey</h2>
+      <p class="journey_tex">
+        Embark on a cosmic adventure with Orbitz. Our story begins with a visionary scientist, driven by curiosity and creativity, who dared to defy the norms of beverage creation. 
+        Banished from Earth but undeterred, they found solace among the stars, where they crafted a drink that defied gravity and captured imaginations. 
+        Today, that spirit of innovation continues to propel Orbitz forward, inspiring us to push the boundaries of flavor and fun.
+      </p>
+      </div>
 
     
 
       <!-- BREAK  -->
-      <div class="break full-width-grid-con"> <p class="col-span-full">random text that im gonna put in here</p> </div>
+      <div class="break full-width-grid-con"> <p class="col-span-full"></p> </div>
 
     <section>
-      <h1>The Process</h1>
-      <div class="procs_cont">
-        <img src="images/null" alt="null.jpg">
-      </div>
+      <div class="grid-con">
+        <div class="col-start-2 col-span-2 m-col-start-4 m-col-span-6">
+          <h1 id="process">The Process</h1>
+            <div class="carousel_cont">
 
-      <div class="procs_cont">
-        <img src="images/null" alt="null.jpg">
-      </div>
+            <div class="img_cont">
+                <img class="carousel_img" src="images/bottle_s.jpg" alt="Product Sketch">
+                <img class="carousel_img" src="images/cute_s.jpg" alt="Product Sketch">
+                <img class="carousel_img" src="images/lamp_s.jpg" alt="Product Sketch">
+                <img class="carousel_img" src="images/moon_s.jpg" alt="Product Sketch">
+                <img class="carousel_img" src="images/astro_s.jpg" alt="Product Sketch">
+                <img class="carousel_img" src="images/blackhole_s.jpg" alt="Product Sketch">
+                <img class="carousel_img" src="images/minimal_s.jpg" alt="Product Sketch">
+                <img class="carousel_img" src="images/nightsky_p.jpg" alt="Product Palette">
+                <img class="carousel_img" src="images/orange_p.jpg" alt="Product Palette">
+                <img class="carousel_img" src="images/labels_r.JPG" alt="Product Sketch">
+                <img class="carousel_img" src="images/star_s.jpg" alt="Product Sketch">
+            </div>
+            <button class="arrow left_arrow">
+                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1488.48 707.98" style="width: 20px; height: 20px;">
+                    <path fill="black" stroke="black" stroke-width="2" d="M1488.46,367.86c1.79,51.87-141.4,179.9-763.82,336.6-138.41,34.85-32.05-200.48-63.88-200.48C309,457.3,4.96,500.42.03,367.86c-3.62-97.43,296-79.72,642-133.99,41.68-6.54-57.98-265.46,79.52-230.66,660.48,167.15,764.84,304.84,766.9,364.65Z" transform="scale(-1,1) translate(-1488.46,0)"/>
+                  </svg>   
+            </button>
+            <button class="arrow right_arrow">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1488.48 707.98" style="width: 20px; height: 20px;">
+                    <path fill="black" stroke="black" stroke-width="2" d="M1488.46,367.86c1.79,51.87-141.4,179.9-763.82,336.6-138.41,34.85-32.05-200.48-63.88-200.48C309,457.3,4.96,500.42.03,367.86c-3.62-97.43,296-79.72,642-133.99,41.68-6.54-57.98-265.46,79.52-230.66,660.48,167.15,764.84,304.84,766.9,364.65Z"/>
+                  </svg>
+                  
+            </button>
+        </div>
 
-      <div class="procs_cont">
-        <img src="images/null" alt="null.jpg">
-      </div>
-
-      <div class="procs_cont">
-        <img src="images/null" alt="null.jpg">
-      </div>
-
-      <div class="procs_cont">
-        <img src="images/null" alt="null.jpg">
-      </div>
-
-      <div class="procs_cont">
-        <img src="images/null" alt="null.jpg">
-      </div>
+        <div class="col-span-full">
+          <h2 class="process_tex">A Rocky Ride</h2>
+          <p class="process_tex">
+            We thrive on innovation and the pursuit of new ideas. But let's not just talk about it – our creative process is where the magic happens. 
+            When crafting our return to Earth, we dove deep into a sea of possibilities, exploring countless iterations until we found the perfect fit.
+            <br> 
+            Here at Orbitz, we believe in perseverance. Even when faced with setbacks, we see them as opportunities for innovation and breakthroughs. 
+            After all, greatness is forged through trial and error! In this section, take a journey through our logo sketches, color palettes, and the evolution of our bottle and label designs.
+        </p>
+        
+          </div>
+    </div>
     </section>
 
 
 </main>
 
 <!-- FOOTER -->
+
+<!-- FOOTER -->
 <footer>
   <!--FOOTER BREAK-->    
-  <div class="break full-width-grid-con"> <p class="col-span-full">random text that im gonna put in here</p> </div>
+  <div class="break full-width-grid-con"></div>
   
       <!-- FOOTER LINKS -->
-  <div class="grid-con">
+  <div id="foot_mobile" class="grid-con">
       <div id="logo_cont" class="grid-con col-start-2 col-span-2">
           <div id="footer_logo" class="col-span-full">
               <img src="images/logo_wordmark.png" alt="orbitz_logo">
@@ -155,34 +185,35 @@
   </div>
           <!-- Footer Navigation -->
           <nav class="col-span-full grid-con">
-              <a class= "foot_nav col-span-1" href="index.html">Home</a>
-              <a class= "foot_nav col-start-2 col-span-1" href="product.html">Product</a>
-              <a class= "foot_nav col-start-3 col-span-1" href="about.html">About Us</a>
-              <a class= "foot_nav col-start-4 col-span-1" href="contact.html">Contact</a>
+              <a class= "foot_nav col-span-1 m-col-start-2" href="index.html">Home</a>
+              <a class= "foot_nav col-start-2 col-span-1 m-col-start-4" href="product.html">Product</a>
+  
+              <img id="footer_logo_desk" class="m-col-start-6 m-col-span-2" src="images/logo_wordmark.png" alt="orbitz_logo">
+  
+              <a class= "foot_nav col-start-3 col-span-1 m-col-start-9" href="about.html">About Us</a>
+              <a class= "foot_nav col-start-4 col-span-1 m-col-start-11" href="contact.html">Contact</a>
           </nav>
   
           <!-- Social Media -->
           <div class="col-span-full grid-con">
-              <a class= "foot_nav col-span-1" href="null">Facebook</a>
-              <a class= "foot_nav col-start-2 col-span-1" href="null">Instagram</a>
-              <a class= "foot_nav col-start-3 col-span-1" href="null">X</a>
-              <a class= "foot_nav col-start-4 col-span-1" href="null">TikTok</a>
+              <img src="images/fb.png" class= "foot_med col-span-1 m-col-start-2 m-col-span-2" href="#">
+              <img src="images/ig.png" class= "foot_med col-start-2 col-span-1 m-col-start-4 m-col-span-2" href="#">
+              <img src="images/x.png" class= "foot_med col-start-3 col-span-1 m-col-start-9 m-col-span-2" href="#">
+              <img src="images/tt.png" class= "foot_med col-start-4 col-span-1 m-col-start-11 m-col-span-2" href="#">
           </div>
       </section>
   
       <!-- Legal Jargon -->
       <section class="legal grid-con">
           <h2 class="hidden"> Legal Jargon</h2>
-          <p class="col-start-4">Legal Jargon </p>
+          <p class="col-span-full">© 2024 Orbitz All Rights Reserved • Privacy Policy • Terms of Service </p>
       </section>
   
   </footer>
-  
-
 </body>
 <!-- END OF ABOUT US PAGE -->
 
 <!-- JAVESCRIPT LINK -->
-<script>src="js/main.js"</script>
+<script src="js/main.js"></script>
 
 </html>
