@@ -126,6 +126,11 @@ img, embed, object, video, picture {
  .m-col-end-13	{grid-column-end: 13;}
 
 
+    /* Nav */
+     #hamburger {
+      display: none;
+     }
+
    /* Hero */
 
    #hero {
@@ -238,6 +243,66 @@ img, embed, object, video, picture {
  .l-col-end-11	{grid-column-end: 11;}
  .l-col-end-12	{grid-column-end: 12;}
  .l-col-end-13	{grid-column-end: 13;}
+
+
+ /* Nav */
+
+ #sticky-nav-con {
+   position: sticky;
+   top: 0px;
+   background-color: #fff;
+   border-bottom: solid 1px #c3c3c3;
+   z-index: 1;
+}
+
+#logo {
+   display: none;
+}
+
+#logo_cont_desktop {
+   margin: 24px; 
+}
+#logo_desktop {
+   display: inline;
+   max-width: 100px;
+}
+
+#button {
+   display: none;
+}
+
+#burger-con {
+   margin-bottom: 20px;
+   display: block;
+   font-size: 16px;
+   margin-top: 28px;
+}
+
+#burger-con ul li, #burger-con ul li:first-child {
+   border: none;
+   display: inline;
+   margin-right: 25px;
+}
+
+#main-nav ul li a {
+   display: inline;
+   font-size: 40px;
+   margin: 32px;
+}
+
+#burger-con ul li {
+   margin-right: 10px;
+}
+
+#burger-con ul li:last-child {
+   margin-right: 0px;
+}
+
+#main-header {
+   height: 110px;
+}
+
+
 
 
 /* Product */
