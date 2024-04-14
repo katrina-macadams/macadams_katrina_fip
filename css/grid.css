@@ -71,7 +71,7 @@ img, embed, object, video, picture {
 
 
  /* ---Tablet Library Grid Styles--- */
- @media screen and (min-width: 768px) { 
+ @media screen and (min-width: 868px) { 
 
     .grid-con { 
         display: grid; 
@@ -136,7 +136,21 @@ img, embed, object, video, picture {
       height: 100vh;
    }
 
+   #astro {
+      background: url(../images/about_hero_desktop.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+   }
+
  
+/* Products */
+
+.flavours {
+   display: block;
+}
+
  /* Footer */
 
  #foot_mobile {
@@ -162,7 +176,11 @@ img, embed, object, video, picture {
    height: 96px;
    width: 96px;
  }
+
 }
+
+
+
 
     
 
@@ -220,5 +238,16 @@ img, embed, object, video, picture {
  .l-col-end-11	{grid-column-end: 11;}
  .l-col-end-12	{grid-column-end: 12;}
  .l-col-end-13	{grid-column-end: 13;}
+
+
+/* Product */
+.fruit {
+   border-radius: 50%;
+   border: 2px #000 solid;
+   width: 88px;
+   height: 88px;
+   padding: 8px;
+   margin: 16px;
+}
 
 }

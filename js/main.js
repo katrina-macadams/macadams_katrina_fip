@@ -48,11 +48,6 @@ nextBtn.addEventListener('click', nextSlide);
 window.addEventListener('click', updateSlideWidth);
 })();
 
-window.addEventListener('resize', function() {
-    // Calculate new height for the top section
-    var windowHeight = window.innerHeight;
-    document.querySelector('.top-section').style.height = windowHeight + 'px';
-});
 
 
 

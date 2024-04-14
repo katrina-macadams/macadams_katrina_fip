@@ -35,7 +35,7 @@ p {
 
  /* LANDING PAGE */
 
- #landing {
+.background {
    background-color: #000;
    color: #F45A14;
  }
@@ -46,14 +46,12 @@ p {
     display: none;
  }
 
- #hamburger .cls-1 {
-   stroke: #ffffff; 
-   transition: stroke 0.3s ease; 
-}
+
 
 #hamburger:hover .cls-1 {
    stroke: #F45A14; 
    cursor: pointer;
+   transition: stroke 0.3s ease; 
 }
 
  /* Sibling Selector */
@@ -140,6 +138,10 @@ p {
 
  /* FOOTER */
 
+ .footer_black {
+   background-color: #000;
+ }
+
  #footer_logo_desk {
    display: none;
  }
@@ -181,8 +183,6 @@ p {
 .img_cont {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    border-radius: 50%;
     display: flex;
     transition: transform .5s ease-in-out; 
 }
@@ -191,6 +191,7 @@ p {
     width: 100%;
     height: auto;
     display: block;  
+    margin: 16px 0px;
 } 
 
 
@@ -200,70 +201,149 @@ p {
 }
 
 .arrow {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.left_arrow, .right_arrow {
-    cursor: pointer; 
-    border: none;
-    border-radius: 50%;
+   margin: 16px;
+   background-color: white;
+   border: none;
+   cursor: pointer;
 }
 
 .left_arrow {
-    left: 130px;
+   margin-left: 40px;
+   margin-right: 16px;
 }
-
-
 .right_arrow {
-    right: 130px;
+   margin-left: 16px;
+   margin-right: 40px;
 }
-
-#desc {
-    margin: 24px;
-    text-align: center;
+.desc {
+   margin: 24px 0px;
+   text-align: center;
+   color: #F45A14;
 }
 
 .h2m {
-    margin-bottom: 16px;
+   margin-bottom: 16px;
+   color: #F45A14;
+}
+
+.flavours {
+   display: hidden;
+}
+
+.fruit {
+   border-radius: 50%;
+   border: 2px #000 solid;
+   width: 48px;
+   height: 48px;
+   padding: 4px;
+}
+
+.soon {
+   opacity: 0.5;
+}
+
+#orange_cap {
+   margin-bottom: 24px;
 }
 
 #round_cont {
     border-style: solid;
     border-width: 6px;
     border-radius: 31px;
-    border-color: #626262;
+    border-color: #F45A14;
     padding: 0;
     margin-bottom: 24px;
 }
 
 #items p {
+    color: #F45A14;
     margin-left: 12px;
 }
 
 #numbers {
-    background-color: #626262;
-    border-top-right-radius: 21px;
-    border-bottom-right-radius: 21px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+   color: white;
+   background: rgb(250,83,6);
+   background: linear-gradient(180deg, rgba(250,83,6,1) 0%, rgba(255,110,0,1) 50%, rgba(250,165,5,1) 100%);
+   border-top-right-radius: 21px;
+   border-bottom-right-radius: 21px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
 }
 
 #numbers p {
     margin-left: 12px;
 }
 
+#meet_orbi {
+   background-color: #F8E0C4;
+}
+
+
+#orbi {
+   max-width: 300px;
+   margin: 32px;
+  
+}
+
 /* ABOUT US PAGE */
+
+#astro {
+   background: url(../images/about_hero_mobile.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   height: 100vh;
+}
+
+.different {
+   text-align: center;
+   color: #F45A14;
+}
+
+.about_space {
+   display: flex;
+}
+
+.about_sec {
+   margin: 12px;
+}
 
 .about_cont {
     border-style: solid;
-    border-width: 6px;
+    border-width: 2px;
     border-radius: 31px;
-    border-color: #626262;
+    border-color:#F45A14;
     margin-bottom: 24px;
+    font-size: 14px;
+    margin: 4px;
 }
 
+.about_cont img {
+   max-width: 100px;
+}
+
+#journey {
+   text-align: center;
+   padding: 32px 24px;
+   background-color: #ffffff;
+}
+
+.journey_tex {
+   margin: 24px;
+   line-height: 32px;
+}
+
+#process {
+   text-align: center;
+   font-size: 60px;
+   margin: 24px;
+}
+
+.process_tex {
+   text-align: center;
+   margin: 24px;
+   line-height: 32px;
+}
 
 /* CONTACT US PAGE */
 
