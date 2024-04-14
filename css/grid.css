@@ -19,6 +19,8 @@ img, embed, object, video, picture {
      margin: 0px; 
      padding: 0px;
   }
+
+
   
   /* ---Utility Classes--- */
   
@@ -26,13 +28,6 @@ img, embed, object, video, picture {
      display: none;
   }
 
-  .box {
-    background-color: rgb(255, 96, 122);
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    margin: 10px 5px;
-    }
   
   /* ---Mobile Library Grid Styles--- */
   
@@ -46,11 +41,12 @@ img, embed, object, video, picture {
    .grid-con { 
      display: grid;
      grid-template-columns: repeat(4, minmax(0, 1fr));
-     grid-column-gap: 30px;
-     max-width: 1200px;
+     grid-column-gap: 16px;
+     max-width: 1920px;
      margin: 0 auto;
      padding-left: 15px;
      padding-right: 15px;
+
   }
   
   .col-span-1	{grid-column: span 1 / span 1;}
@@ -71,6 +67,9 @@ img, embed, object, video, picture {
   .col-end-5	{grid-column-end: 5;}
 
 
+
+
+
  /* ---Tablet Library Grid Styles--- */
  @media screen and (min-width: 768px) { 
 
@@ -81,8 +80,8 @@ img, embed, object, video, picture {
         padding-left: 15px;
         padding-right: 15px;
      }
+     .m-col-span-full {grid-column: 1 / -1;}
 
-     .m-col-span-1	{grid-column: span 1 / span 1;}
  
  .m-col-span-1	{grid-column: span 1 / span 1;}
  .m-col-span-2	{grid-column: span 2 / span 2;}
@@ -92,6 +91,11 @@ img, embed, object, video, picture {
  .m-col-span-6	{grid-column: span 6 / span 6;}
  .m-col-span-7	{grid-column: span 7 / span 7;}
  .m-col-span-8	{grid-column: span 8 / span 8;}
+ .m-col-span-9	{grid-column: span 9 / span 9;}
+ .m-col-span-10 {grid-column: span 10 / span 10;}
+ .m-col-span-11 {grid-column: span 11 / span 11;}
+ .m-col-span-12 {grid-column: span 12 / span 12;}
+
 
  .m-col-start-1	{grid-column-start: 1;}
  .m-col-start-2	{grid-column-start: 2;}
@@ -101,6 +105,11 @@ img, embed, object, video, picture {
  .m-col-start-6	{grid-column-start: 6;}
  .m-col-start-7	{grid-column-start: 7;}
  .m-col-start-8	{grid-column-start: 8;}
+ .m-col-start-9	{grid-column-start: 9;}
+ .m-col-start-10	{grid-column-start: 10;}
+ .m-col-start-11	{grid-column-start: 11;}
+ .m-col-start-12	{grid-column-start: 12;}
+ .m-col-start-13	{grid-column-start: 13;}
 
  .m-col-end-1	{grid-column-end: 1;}
  .m-col-end-2	{grid-column-end: 2;}
@@ -110,9 +119,49 @@ img, embed, object, video, picture {
  .m-col-end-6	{grid-column-end: 6;}
  .m-col-end-7	{grid-column-end: 7;}
  .m-col-end-8	{grid-column-end: 8;}
- 
- 
+ .m-col-end-9	{grid-column-end: 9;}
+ .m-col-end-10	{grid-column-end: 10;}
+ .m-col-end-11	{grid-column-end: 11;}
+ .m-col-end-12	{grid-column-end: 12;}
+ .m-col-end-13	{grid-column-end: 13;}
 
+
+   /* Hero */
+
+   #hero {
+      background: url(../images/desktop.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+   }
+
+ 
+ /* Footer */
+
+ #foot_mobile {
+   display: none;
+}
+
+.foot_nav {
+   margin: 134px 0px;
+   cursor: pointer;
+   text-decoration: none;
+   color: #F45A14;
+   text-align: center;
+   font-size: 32px;
+ }
+
+ #footer_logo_desk {
+   margin: 64px 0px;
+   display: block;
+ }
+
+ .foot_med {
+   margin: 0px 0px 32px 0px;
+   height: 96px;
+   width: 96px;
+ }
 }
 
     

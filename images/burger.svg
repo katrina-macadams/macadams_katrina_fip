@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 23px;
+      }
+    </style>
+  </defs>
+  <line id="top_line" data-name="top line" class="cls-1" x1="96.5" y1="121.8" x2="303.5" y2="121.4"/>
+  <line id="mid_line" data-name="mid line" class="cls-1" x1="96.5" y1="200.2" x2="303.5" y2="199.8"/>
+  <line id="bot_line" data-name="bot line" class="cls-1" x1="96.5" y1="278.6" x2="303.5" y2="278.2"/>
+</svg>

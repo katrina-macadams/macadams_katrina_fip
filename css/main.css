@@ -1,4 +1,339 @@
-body {
-    color: #ffffff;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* GLOBAL */
+
+ #hero {
+    background: url(../images/mobile.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
  }
+  
+
+ 
+
+ /* Font Styles */
+
+body {
+   font-family: 'sofia-pro-soft', sans-serif; 
+}
+
+h1 {
+   font-family: 'chicagoflf', sans-serif; 
+}
+
+h2, h3, h4, h5, h6 {
+   font-family: 'le-havre-rounded', sans-serif; 
+}
+
+p {
+   font-family: 'sofia-pro-soft', sans-serif; 
+}
+
+.special-text {
+   font-family: 'font-family-from-chicagoflf', serif;
+}
+
+ /* LANDING PAGE */
+
+ #landing {
+   background-color: #000;
+   color: #F45A14;
+ }
+
+ /* MAIN NAV */
+ 
+ #main-nav input, #burger-con {
+    display: none;
+ }
+
+ #hamburger .cls-1 {
+   stroke: #ffffff; 
+   transition: stroke 0.3s ease; 
+}
+
+#hamburger:hover .cls-1 {
+   stroke: #F45A14; 
+   cursor: pointer;
+}
+
+ /* Sibling Selector */
+
+
+#main-nav input:checked ~ #burger-con {
+    display: block;
+ }
+
+
+ #main-nav input:checked ~ label svg {
+   transform: rotate(90deg);
+}
+ 
+ #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #main-nav ul li a {
+    display: block;
+    margin-left: 20px;
+    padding: 10px 0 10px 0;
+    text-align: left;
+    color: #F45A14;
+    text-decoration: none;
+ }
+ 
+ #main-nav ul li:last-child {
+    margin-bottom: 10px;
+ } 
+
+ #hamburger {
+    margin-top: 24px;
+    max-width: 80px;
+ }
+
+ #logo_cont {
+    margin: 24px 71px; 
+ }
+ #logo {
+    max-width: 100px;
+ }
+
+ /* SECTION BREAK CONTAINER */
+
+ .break {
+    background-color: orange;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    margin: 0px 0px;
+ }
+
+ /* SECTION 2 */
+
+ #universe {
+   margin: 32px;
+   text-align: center;
+   color: #ffffff;
+ }
+
+ #flavours {
+   width: 955px;
+   height: 808px;
+ }
+
+
+ /* SECTION 3 */
+
+ #possibility {
+   background-color: #ffffff;
+ }
+ .bottle_tex {
+    margin: 24px 0px;
+    text-align: center;
+    line-height: 42px;
+ }
+
+ .h3d {
+    margin-bottom: 16px;
+ }
+
+ /* FOOTER */
+
+ #footer_logo_desk {
+   display: none;
+ }
+
+ #footer_logo {
+    max-width: 125px;
+ }
+
+ .foot_nav {
+   margin-bottom: 24px;
+   cursor: pointer;
+   text-decoration: none;
+   color: #F45A14;
+   text-align: center;
+ }
+
+ .foot_med {
+   height: 64px;
+   width: 64px;
+   cursor: pointer;
+   margin: 30px;
+ }
+
+ .legal {
+    padding: 10px 0px;
+    background: rgb(250,83,6);
+    background: linear-gradient(180deg, rgba(250,83,6,1) 0%, rgba(255,110,0,1) 50%, rgba(250,165,5,1) 100%);
+    color: #ffffff;
+ }
+
+
+/* PRODUCT PAGE */
+ 
+.carousel_cont {
+    overflow: hidden; 
+    position: relative;
+}
+
+.img_cont {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    transition: transform .5s ease-in-out; 
+}
+
+.img_cont img {
+    width: 100%;
+    height: auto;
+    display: block;  
+} 
+
+
+.carousel_img {
+    max-width: 100%;
+    height: auto;
+}
+
+.arrow {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.left_arrow, .right_arrow {
+    cursor: pointer; 
+    border: none;
+    border-radius: 50%;
+}
+
+.left_arrow {
+    left: 130px;
+}
+
+
+.right_arrow {
+    right: 130px;
+}
+
+#desc {
+    margin: 24px;
+    text-align: center;
+}
+
+.h2m {
+    margin-bottom: 16px;
+}
+
+#round_cont {
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 31px;
+    border-color: #626262;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+#items p {
+    margin-left: 12px;
+}
+
+#numbers {
+    background-color: #626262;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#numbers p {
+    margin-left: 12px;
+}
+
+/* ABOUT US PAGE */
+
+.about_cont {
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 31px;
+    border-color: #626262;
+    margin-bottom: 24px;
+}
+
+
+/* CONTACT US PAGE */
+
+#email {
+    margin-bottom: 32px;
+}
+
+#media_cont {
+    margin: 0px 21px;
+}
+.social_cont {
+    height: 53px;
+    width: 53px;
+}
+
+
+/* Form */
+
+  form label {
+    display: inline-block;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 8px;
+  
+    /* To allow users to resize any textarea vertically
+       It works only on Chrome, Firefox and Safari */
+    resize: vertical;
+  }
+
+  #name {
+    border: 6px solid #ccc;
+    border-radius: 31px;
+  }
+
+  #mail {
+    border: 6px solid #ccc;
+    border-radius: 31px;
+  }
+
+  #msg {
+    border: 6px solid #ccc;
+    border-radius: 31px;
+    height: 76px;
+  }
+
+  #submit {
+    border: 6px solid #ccc;
+    border-radius: 31px;
+  }
+
+  #map {
+    background: url(../images/mobile.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+ }
+
+  
