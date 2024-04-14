@@ -41,18 +41,61 @@ p {
  }
 
  /* MAIN NAV */
+
+ .black_header {
+   background-color: #000;
+ }
  
  #main-nav input, #burger-con {
     display: none;
  }
 
-
-
-#hamburger:hover .cls-1 {
-   stroke: #F45A14; 
-   cursor: pointer;
-   transition: stroke 0.3s ease; 
+ #main-nav button {
+   width: 50px;
+   height: 50px;
+   background: url(../images/burger.svg) no-repeat center;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   transition: all .5s ease;
+   border: 0;
 }
+
+#main-nav button.expanded {
+   transform: rotate(90deg);
+}
+
+#burger-con {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: none;
+}
+
+#burger-con.slide-toggle {
+   display: block;
+}
+
+#main-nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#main-nav ul li a {
+   display: block;
+   padding: 10px 0 10px 0;
+   text-align: center;
+   color: #F45A14;
+}
+
+#main-nav ul li a:hover {
+   color: #F45A14;
+}
+
+
+#main-nav ul li:last-child {
+   margin-bottom: 10px;
+}
+
 
  /* Sibling Selector */
 
@@ -90,12 +133,23 @@ p {
     max-width: 80px;
  }
 
+ #button {
+   display: block;
+ }
+
  #logo_cont {
     margin: 24px 71px; 
  }
  #logo {
     max-width: 100px;
  }
+
+ #logo_cont_desktop {
+   display: none; 
+}
+#logo_desktop {
+   display: none;
+}
 
  /* SECTION BREAK CONTAINER */
 
@@ -119,6 +173,128 @@ p {
    width: 955px;
    height: 808px;
  }
+
+.universe_cont {
+   position: relative;
+   width: 100%;
+}
+
+#universe_img {
+   max-width: 100%;
+   height: auto;
+}
+
+#hot_spot_nav {
+   list-style-type: none;
+}
+
+.hot_spot {
+   position: absolute;
+   width: 96px; 
+   height: 96px; 
+   background-color: transparent; 
+   cursor: pointer;
+   background-size: cover;
+}
+
+#hot_spot_1 {
+   top: 50%;
+   left: 80%;
+   background-image: url('../images/planet.png');
+}
+
+#hot_spot_2 {
+   top: 20%;
+   left: 10%;
+   background-image: url('../images/planet2.png');
+}
+
+#hot_spot_3 {
+   top: 20%;
+   left: 70%;
+   background-image: url('../images/planet3.png');
+}
+
+.info_box {
+   margin-top: 20px;
+}
+
+#info {
+   font-size: 24px;
+   text-align: center;
+}
+
+/* Lightboxes */
+.lightbox { 
+   width: 100vw; 
+   height: 100vh; 
+
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   background-color: rgba(0, 0, 0, 0.85);
+   background-image: url('../images/astro_lax.png');
+   background-repeat: no-repeat;
+
+   background-size: 60vh; 
+   background-position: 40px bottom;
+
+   z-index: 5000;
+
+   display: none;
+}
+
+
+.lightbox_close {
+   position: relative;
+   top: 20px;
+   left: 95%;
+
+   color: white;
+   font-size: 24px;
+
+   text-decoration: none;
+
+   font-weight: bold;
+}
+
+.lightbox_close:hover { opacity: 0.5; color:#F45A14; }
+
+.lightbox article {
+   width: 55%;
+   margin-left: 40%;
+   padding-top: 50px;
+}
+
+.lb_text, .lb_heading { 
+   text-align: left; }
+
+.lb_text {
+   line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+   margin-left: 0;
+}
+
+.lightbox:target { display: block; }
+
+article { padding: 20px; }
+
+article h3  {
+   font-size: 2em;
+   text-align: center;
+   margin-bottom: 14px;
+}
+
+
+article p {
+   width: 80%;
+   font-size: 18px;
+   line-height: 1.2;
+   text-align: center;
+   margin: 0 auto;
+}
 
 
  /* SECTION 3 */
@@ -347,6 +523,25 @@ p {
 
 /* CONTACT US PAGE */
 
+#contact {
+   color: #F45A14;
+}
+
+#hero_contact {
+   background: url(../images/background_orange.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 1000px;
+}
+
+.h1_contact {
+   margin-bottom: 24px;
+}
+
+.contact_tex {
+   margin-bottom: 56px;
+}
+
 #email {
     margin-bottom: 32px;
 }
@@ -357,8 +552,12 @@ p {
 .social_cont {
     height: 53px;
     width: 53px;
+    margin-bottom: 64px;
 }
 
+.reach {
+   color: white;
+}
 
 /* Form */
 
@@ -381,15 +580,13 @@ p {
   textarea {
     vertical-align: top;
     height: 8px;
-  
-    /* To allow users to resize any textarea vertically
-       It works only on Chrome, Firefox and Safari */
     resize: vertical;
   }
 
   #name {
     border: 6px solid #ccc;
     border-radius: 31px;
+    padding: 16px;
   }
 
   #mail {
@@ -404,16 +601,28 @@ p {
   }
 
   #submit {
-    border: 6px solid #ccc;
+    border: 6px solid #F45A14;
     border-radius: 31px;
+    background-color: #ffffff;
+    color: #F45A14;
   }
 
-  #map {
-    background: url(../images/mobile.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
- }
+  #submit:hover {
+   background: rgb(250,83,6);
+   background: linear-gradient(180deg, rgba(250,83,6,1) 0%, rgba(255,110,0,1) 50%, rgba(250,165,5,1) 100%);
+   color: white;
+  }
+
+  #submit:visited::before {
+   background-color: #F45A14;
+   color: white;
+   content: 'Sent!';
+  }
+
+
+
+  
+
+
 
   

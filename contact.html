@@ -10,42 +10,40 @@
 <!-- CSS LINKS -->
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
+
+<!-- FONTS -->
+<link rel="stylesheet" href="https://use.typekit.net/qor8jmp.css">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/chicagoflf" type="text/css"/>
+
 </head>
 
 <!-- ORBITZ CONTACT PAGE -->
-<body>
+<body id="contact">
     <main>
 
 <!-- HEADER -->
-<section id="hero">
+<section id="hero_contact">
     <header id="main_header" class="grid-con">
-            <h2 class="hidden">Hero</h2>
-
-        <nav id="main-nav" class="col-span-1">
+        <nav id="main-nav" class="col-span-1 l-col-end-12 l-col-span-9">
             <h2 class="hidden">Main Navigation</h2>
-            <input type="checkbox" id="hamburger">
-            <label for="hamburger">
-            <img id="hamburger" src="images/burger.svg" alt="hamburger menu icon">
-            </label>
+            <button id="button"></button>
             <div id="burger-con">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="l-col-start-2 l-col-span-1"><a href="index.html">Home</a></li>
+                    <li class="l-col-start- l-col-span-1"><a href="product.html">Product</a></li>
+                    <img id="logo_desktop" src="images/logo.svg" alt="orbitz_logo">
+                    <li class="l-col-start-9 l-col-span-1"><a href="about.html">About Us</a></li>
+                    <li class="l-col-start-11 l-col-span-1"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        
-    <div id="logo_cont" class="grid-con col-start-2 col-span-2">
+    <div id="logo_cont" class="grid-con col-start-2 col-span-2 m-col-start-6">
         <div id="logo" class="col-span-full">
             <img src="images/logo.svg" alt="orbitz_logo">
         </div>
     </div>
     </header>
 
-        <!-- Hero Background -->
-</section>
 
          <!-- CONTACT INFO -->
     <section class="grid-con">
@@ -53,72 +51,65 @@
 
     
         <!-- Section Paragraph -->
-        <div class="bottle_tex col-span-full">
-            <h3 class="h3d">Contact</h3>
-            <p class="body2d">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="contact_tex col-span-full">
+            <h1 class="h1_contact">Contact</h1>
+            <p>
+                We love hearing from our community! Whether you have a question about our products, feedback on your experience, or just want to say hello, feel free to reach out. Our team is ready to assist you and ensure your Orbitz experience is out of this world.
             </p>
-            </div>
-
+        </div>
+       
     <!-- CONTACT INFO -->
-
+    
         <!-- Address -->
-        <div class="col-start-1 col-span-2">
+        <div class="col-start-1 col-span-1">
             <h2>Address</h2>
             <p>1234 MadeUp Street <br> MadeUp, On</p>
         </div>
         
         <!-- Phone -->
-        <div class="col-start-3 col-span-2">
+        <div class="col-start-4 col-span-1">
             <h2>Phone</h2>
             <p>+1 123 456 7890</p>
         </div>
     
 
         <!-- Email -->
-        <div id="email" class="col-start-1 col-span-full">
+        <div id="email" class="col-start-1">
             <h2>Email</h2>
-            <p>madeupemail@gmail.ca</p>
+            <p>orbitz@email.ca</p>
         </div>
 
     <!-- Socials -->
     <div id="media_cont" class="grid-con col-span-full">
         <div class="social_cont col-span-1">
-            <img src="images/fb.svg"> 
+            <img src="images/fb.png"> 
         </div>
         <div class="social_cont col-span-1">
-            <img src="images/fb.svg"> 
+            <img src="images/ig.png"> 
         </div>
         <div class="social_cont col-span-1">
-            <img src="images/fb.svg"> 
+            <img src="images/x.png"> 
         </div>
         <div class="social_cont col-span-1">
-            <img src="images/fb.svg"> 
+            <img src="images/tt.png"> 
         </div>
     </div>
     
     </section>
 
-   <!-- BREAK  -->
-   <div class="break full-width-grid-con"> <p class="col-span-full">random text that im gonna put in here</p> </div>
+  
     
 
     <!-- REACH OUT -->
-    <section  class="grid-con">
+    <section  class=" reach grid-con">
         <!-- Title -->
-        <h2 class="col-start-2 col-span-2">Reach Out</h2>
+        <h2 class=" col-span-2">Reach Out</h2>
 
   <!-- Deco -->
 
-
-</section>
-
 <h2 class="hidden">Form</h2>
         <!-- FORM -->
-        <form class="grid-con" action="#" method="post" enctype="text/plain">
+        <form class="grid-con col-span-full" action="#" method="post" enctype="text/plain">
             <div>
                 <div class="col-span-2">
                 <label for="name" required placeholder="Name">Name:</label>
@@ -136,35 +127,34 @@
                 <textarea id="msg" name="user_message"></textarea>
               </div>
             </div>
-
             <div class="button col-span-2">
-              <button id="submit" type="submit">Send</button>
-            </div>
+                <input id="submit" type="submit" value="Send"/>
+              </div>
           </form>
         </div>
 
-
-  <!-- BREAK  -->
-  <div class="break full-width-grid-con"> <p class="col-span-full">random text that im gonna put in here</p> </div>
-    
-    <!-- MAP -->
-    <section id="map" class="grid-con">
-        <h2 class="hidden">Map</h2>
-
-        <!-- Map Background -->
+   
 
     </section>
 
-
 </main>
 
+
+
 <!-- FOOTER -->
-<footer>
+<footer class="footer_black">
+     <!-- BREAK  -->
+     <div class="break full-width-grid-con"> <p class="col-span-full">Here's our Location</p> </div>
+
+    <div class="grid-con">
+        <img id="map" class="col-span-full" src="images/map.svg" alt="map" height="500" width="1920"> 
+    </div>
     <!--FOOTER BREAK-->    
-    <div class="break full-width-grid-con"> <p class="col-span-full">random text that im gonna put in here</p> </div>
+    <div class="break full-width-grid-con"></div>
+
     
         <!-- FOOTER LINKS -->
-    <div class="grid-con">
+    <div id="foot_mobile" class="grid-con">
         <div id="logo_cont" class="grid-con col-start-2 col-span-2">
             <div id="footer_logo" class="col-span-full">
                 <img src="images/logo_wordmark.png" alt="orbitz_logo">
@@ -173,28 +163,33 @@
     </div>
             <!-- Footer Navigation -->
             <nav class="col-span-full grid-con">
-                <a class= "foot_nav col-span-1" href="index.html">Home</a>
-                <a class= "foot_nav col-start-2 col-span-1" href="product.html">Product</a>
-                <a class= "foot_nav col-start-3 col-span-1" href="about.html">About Us</a>
-                <a class= "foot_nav col-start-4 col-span-1" href="contact.html">Contact</a>
+                <a class= "foot_nav col-span-1 m-col-start-2" href="index.html">Home</a>
+                <a class= "foot_nav col-start-2 col-span-1 m-col-start-4" href="product.html">Product</a>
+    
+                <img id="footer_logo_desk" class="m-col-start-6 m-col-span-2" src="images/logo_wordmark.png" alt="orbitz_logo">
+    
+                <a class= "foot_nav col-start-3 col-span-1 m-col-start-9" href="about.html">About Us</a>
+                <a class= "foot_nav col-start-4 col-span-1 m-col-start-11" href="contact.html">Contact</a>
             </nav>
     
             <!-- Social Media -->
             <div class="col-span-full grid-con">
-                <a class= "foot_nav col-span-1" href="null">Facebook</a>
-                <a class= "foot_nav col-start-2 col-span-1" href="null">Instagram</a>
-                <a class= "foot_nav col-start-3 col-span-1" href="null">X</a>
-                <a class= "foot_nav col-start-4 col-span-1" href="null">TikTok</a>
+                <img src="images/fb.png" class= "foot_med col-span-1 m-col-start-2 m-col-span-2" href="#">
+                <img src="images/ig.png" class= "foot_med col-start-2 col-span-1 m-col-start-4 m-col-span-2" href="#">
+                <img src="images/x.png" class= "foot_med col-start-3 col-span-1 m-col-start-9 m-col-span-2" href="#">
+                <img src="images/tt.png" class= "foot_med col-start-4 col-span-1 m-col-start-11 m-col-span-2" href="#">
             </div>
         </section>
     
         <!-- Legal Jargon -->
         <section class="legal grid-con">
             <h2 class="hidden"> Legal Jargon</h2>
-            <p class="col-start-4">Legal Jargon </p>
+            <p class="col-span-full">© 2024 Orbitz All Rights Reserved • Privacy Policy • Terms of Service </p>
         </section>
     
     </footer>
+    
+    
 </body>
 <!-- END OF CONTACT PAGE -->
 
